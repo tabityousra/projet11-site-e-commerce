@@ -1,22 +1,8 @@
-
+<?php session_start() ?>
 
 <!DOCTYPE php>
-<php class="no-js" lang="fr">
-<?php 
+<php class="no-js" lang="zxx">
 
-include "cartManager.php";
-session_start();
-
-
-$cartManager = new CartManager();
-$cartManager->initCode();
-
-$Categorie = 'Face care';
-$data = $cartManager->getAllProducts();
-if(isset($_COOKIE['cartCookie'])){
-$cart = $cartManager->getCart($_COOKIE['cartCookie']);
-}
-?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -51,53 +37,84 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
 
 </head>
 
-
-
 <body>
 
     <!--== Wrapper Start ==-->
     <div class="wrapper">
 
         <!--== Start Header Wrapper ==-->
-        <header class="header-area sticky-header header-transparent">
+        <header class="header-area">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-5 col-lg-2 col-xl-1">
+                    <div class="col-5 col-sm-6 col-lg-3">
                         <div class="header-logo">
                             <a href="index.php">
                                 <img class="logo-main" src="assets/images/logo.webp" width="95" height="68" alt="Logo" />
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-xl-7 d-none d-lg-block">
-                        <div class="header-navigation ps-7">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <div class="header-navigation">
                             <ul class="main-nav justify-content-start">
                                 <li class="has-submenu"><a href="index.php">home</a>
-                                        
-                                </li>
-                                <li><a href="about-us.php">about</a></li>
-                                <li class="has-submenu position-static"><a href="#">shop</a>
-                                    <ul class="submenu-nav-mega">
-                                        <li><a href="#/" class="mega-title">categories</a>
-                                            <ul>
-                                                
-                                                <li><a href="hare-care.php">Hare care</a></li>
-                                                <li><a href="Face-care.php">Face care</a></li>
-                                                <li><a href="blusher.php">Blusher</a></li>
-                                                <li><a href="lip-stick.php">Lip stick</a></li>
-                                                <li><a href="skin-care.php">Skin care</a></li>
-                                            </ul>
-                                        </li>
-                                       
-                                      
+                                    <ul class="submenu-nav">
+                                        <li><a href="index.php">Home One</a></li>
+                                        <li><a href="index-two.php">Home Two</a></li>
                                     </ul>
                                 </li>
-                                
+                                <li><a href="about-us.php">about</a></li>
+                                <li class="has-submenu position-static"><a href="product.php">shop</a>
+                                    <ul class="submenu-nav-mega">
+                                        <li><a href="#/" class="mega-title">Shop Layout</a>
+                                            <ul>
+                                                <li><a href="product.php">Shop 3 Column</a></li>
+                                                <li><a href="product-four-columns.php">Shop 4 Column</a></li>
+                                                <li><a href="product-left-sidebar.php">Shop Left Sidebar</a></li>
+                                                <li><a href="product-right-sidebar.php">Shop Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#/" class="mega-title">Single Product</a>
+                                            <ul>
+                                                <li><a href="product-details-normal.php">Single Product Normal</a></li>
+                                                <li><a href="product-details.php">Single Product Variable</a></li>
+                                                <li><a href="product-details-group.php">Single Product Group</a></li>
+                                                <li><a href="product-details-affiliate.php">Single Product Affiliate</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#/" class="mega-title">Others Pages</a>
+                                            <ul>
+                                                <li><a href="product-cart.php">Shopping Cart</a></li>
+                                                <li><a href="product-checkout.php">Checkout</a></li>
+                                                <li><a href="product-wishlist.php">Wishlist</a></li>
+                                                <li><a href="product-compare.php">Compare</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu"><a href="blog.php">Blog</a>
+                                    <ul class="submenu-nav">
+                                        <li class="has-submenu"><a href="#/">Blog Layout</a>
+                                            <ul class="submenu-nav">
+                                                <li><a href="blog.php">Blog Grid</a></li>
+                                                <li><a href="blog-left-sidebar.php">Blog Left Sidebar</a></li>
+                                                <li><a href="blog-right-sidebar.php">Blog Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog-details.php">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu"><a href="my-account.php">Pages</a>
+                                    <ul class="submenu-nav">
+                                        <li><a href="my-account.php">My Account</a></li>
+                                        <li><a href="faq.php">Frequently Questions</a></li>
+                                        <li><a href="page-not-found.php">Page Not Found</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-7 col-lg-3 col-xl-4">
+                    <div class="col-7 col-sm-6 col-lg-3">
                         <div class="header-action justify-content-end">
                             <button class="header-action-btn ms-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch">
                                 <span class="icon">
@@ -129,8 +146,8 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
 
                             <a class="header-action-btn" href="my-account.php">
                                 <span class="icon">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
-                  <rect class="icon-rect" width="30" height="30" fill="url(#pattern3)"/>
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect class="icon-rect" width="30" height="30" fill="url(#pattern3)"/>
                     <defs>
                       <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
                         <use xlink:href="#image0_504:10" transform="scale(0.0333333)"/>
@@ -155,190 +172,150 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
 
         <main class="main-content">
 
-            <!--== Start Hero Area Wrapper ==-->
-            <section class="hero-slider-area position-relative">
-                <div class="swiper hero-slider-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide hero-slide-item">
-                            <div class="container">
-                                <div class="row align-items-center position-relative">
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-content">
-                                            <div class="hero-slide-text-img"><img src="assets/images/slider/text-theme.webp" width="427" height="232" alt="Image"></div>
-                                            <h2 class="hero-slide-title">CLEAN FRESH</h2>
-                                            <p class="hero-slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
-                                            <a class="btn btn-border-dark" href="index.php">BUY NOW</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-thumb">
-                                            <img src="./img/ezgif.com-gif-maker.png" width="841" height="832" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hero-slide-text-shape"><img src="assets/images/slider/text1.webp" width="70" height="955" alt="Image"></div>
-                            <div class="hero-slide-social-shape"></div>
-                        </div>
-                        <div class="swiper-slide hero-slide-item">
-                            <div class="container">
-                                <div class="row align-items-center position-relative">
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-content">
-                                            <div class="hero-slide-text-img"><img src="assets/images/slider/text-theme.webp" width="427" height="232" alt="Image"></div>
-                                            <h2 class="hero-slide-title">Facial Cream</h2>
-                                            <p class="hero-slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
-                                            <a class="btn btn-border-dark" href="index.php">BUY NOW</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-thumb">
-                                            <img src="assets/images/slider/slider2.webp" width="841" height="832" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hero-slide-text-shape"><img src="assets/images/slider/text1.webp" width="70" height="955" alt="Image"></div>
-                            <div class="hero-slide-social-shape"></div>
-                        </div>
-                    </div>
-                    <!--== Add Pagination ==-->
-                    <div class="hero-slider-pagination"></div>
-                </div>
-                <div class="hero-slide-social-media">
-                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i class="fa fa-pinterest-p"></i></a>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-                </div>
-            </section>
-            <!--== End Hero Area Wrapper ==-->
-
-            <!--== Start Product Category Area Wrapper ==-->
-            <section class="section-space pb-0">
-                <div class="container">
-                     <div class="row g-3 g-sm-6 d-flex justify-content-center">
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2">
-                            <!--== Start Product Category Item ==-->
-                            <a href="hare-care.php" class="product-category-item">
-                                <img class="icon" src="assets/images/shop/category/1.webp" width="70" height="80" alt="Image-HasTech">
-                                <h3 class="title">Hare care</h3>
-                                <span class="flag-new">new</span>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2">
-                            <!--== Start Product Category Item ==-->
-                            <a href="skin-care.php" class="product-category-item" data-bg-color="#FFEDB4">
-                                <img class="icon" src="assets/images/shop/category/2.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Skin care</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-lg-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="lip-stick.php" class="product-category-item" data-bg-color="#DFE4FF">
-                                <img class="icon" src="assets/images/shop/category/3.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Lip stick</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-xl-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
-                                <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Face skin</h3>
-                                <span data-bg-color="#835BF4" class="flag-new">sale</span>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-xl-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="blusher.php" class="product-category-item" data-bg-color="#FFDAE0">
-                                <img class="icon" src="assets/images/shop/category/5.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Blusher</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-            <!--== End Product Category Area Wrapper ==-->
-
-            <!--== Start Product Area Wrapper ==-->
-            <section class="section-space">
+            <!--== Start Page Header Area Wrapper ==-->
+            <section class="page-header-area pt-10 pb-9" data-bg-color="#FFF3DA">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="section-title text-center">
-                                <h2 class="title">Top sale</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                        <div class="col-md-5">
+                            <div class="page-header-st3-content text-center text-md-start">
+                                <ol class="breadcrumb justify-content-center justify-content-md-start">
+                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
+                                    <li class="breadcrumb-item active text-dark" aria-current="page">My Account</li>
+                                </ol>
+                                <h2 class="page-header-title">My Account</h2>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row mb-n4 mb-sm-n10 g-3 g-sm-6">
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-9">
-                            <!--== Start Product Item ==-->
-                           <!-- produit -->
-                           <?php  foreach($data as $value){ ?>
-                            <div class="product-item">
-                                <div class="product-thumb">
-                                    <a class="d-block" href="product-details.php?id=<?php echo $value->getId()?>">
-                                        <img src="./img/<?php echo $value->getImage()?>" width="370" height="450" alt="Image-HasTech">
-                                    </a>
-                                    <span class="flag-new">new</span>
-                                    <div class="product-action">
-                                        <button type="button" class="product-action-btn action-btn-quick-view" value="<?php echo $value->getId() ?>"  data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand" ></i>
-                                            
-                                        </button>   
-                                        <button type="button" 
-                                                class="product-action-btn action-btn-cart" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#action-CartAddModal"
-                                                data-id= <?php echo $value->getId()?>
-                                                data-product-image = <?php echo urlencode($value->getImage())?>
-                                                data-product-name = <?php echo urlencode($value->getName())?>
-                                               
-                                                >
-                                            <span>Add to cart</span>
-                                        </button>
-                                        <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                            <i class="fa fa-heart-o"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h4 id="test" class="title"><a href="product-details.php?id=<?php echo $value->getId() ?>"><?php echo $value->getName() ?></a></h4>
-                                    <div class="prices">
-                                        <span class="price"><?php echo $value->getPrice() ?> DH</span>
-                                      
-                                    </div>
-                                </div>
-                                <div class="product-action-bottom">
-                                    <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                        <i class="fa fa-expand"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                           
-                            <!--== End prPduct Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 mb-4 mb-sm-9">
-                        <?php } ?>    
-                      
-                            <!--== End prPduct Item ==-->
                         </div>
                     </div>
                 </div>
             </section>
+            <!--== End Page Header Area Wrapper ==-->
+<?php 
+
+include 'login-signUp/AuthenticationManager.php';
+
+
+            if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                
+            //    echo print_r($_SESSION["email"]) ;
+
+             $email =   $_SESSION["email"]; 
+             $account = new AuthenticationManager();
+            
+
           
+            //afficher les informations
+            
+            $data = $account->MyAccount($email);
+            foreach ($data as $value ) ;
+           
+           
+        }
+        else{
+          $login = 'login';   
+         }
+                
+              //modifier les informations
+
+              if(isset($_POST['Save'])){
+
+                
+                $firstName = $_POST['first-name'];
+                $lastName = $_POST['last-name'];
+                $id = $value->getId();
+                $account->EditMyAccount($firstName,$lastName,$id);
+            }
+
+            
+
+?>
+
+            <!--== Start My Account Area Wrapper ==-->
+            <section class="my-account-area section-space">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="my-account-tab-menu nav nav-tabs" id="nav-tab" role="tablist">
+                              
+                                <button class="nav-link" id="account-info-tab" data-bs-toggle="tab" data-bs-target="#account-info" type="button" role="tab" aria-controls="account-info" aria-selected="false">Account Details</button>
+                                
+                                <?php 
+                                
+                                if(!empty($login)){ ?>
+                                    <button class="nav-link" onclick="window.location.href='./login-signup/login.php'" type="button"> <?php echo $login; ?> </button>
+                             <?php
+                                } 
+                                else{ ?>
+                                    <button class="nav-link" onclick="window.location.href='./login-signup/login.php'" type="button"> <?php echo "logout";  }?> </button>
+                           
+                           
+                            </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <div class="tab-content" id="nav-tabContent">
+                                
+                                
+                                <div class="" id="account-info" role="tabpanel" aria-labelledby="account-info-tab">
+                                    <div class="myaccount-content">
+                                        <h3>Account Details</h3>
+                                        <div class="account-details-form">
+                                            <form action="#" method="POST">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="single-input-item">
+                                                       
+
+                                                            <label for="first-name" class="required" >First Name</label>
+                                                            <input type="text" name="first-name" id="first-name" value="<?= $value->getfirstName() ?>" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="single-input-item">
+                                                            <label for="last-name" class="required">Last Name</label>
+                                                            <input type="text"  name="last-name" id="last-name" value="<?= $value->getlastName() ?>" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="single-input-item">
+                                                    <label for="email" class="required" >Email Addres</label>
+                                                    <input type="email" id="email"  value="<?= $value->getEmail() ?>" readonly />
+                                                </div>
+                                                <fieldset>
+                                                    <legend>Password change</legend>
+                                                    <div class="single-input-item">
+                                                        <label for="current-pwd" class="required">Current Password</label>
+                                                        <input type="password" id="current-pwd" />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="single-input-item">
+                                                                <label for="new-pwd" class="required">New Password</label>
+                                                                <input type="password" id="new-pwd" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="single-input-item">
+                                                                <label for="confirm-pwd" class="required">Confirm Password</label>
+                                                                <input type="password" id="confirm-pwd" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="single-input-item">
+                                                    <button class="check-btn sqr-btn" type="submit" name="Save">Save Changes</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--== End My Account Area Wrapper ==-->
+
         </main>
 
         <!--== Start Footer Area Wrapper ==-->
@@ -361,12 +338,12 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                             <div class="widget-item">
                                 <h4 class="widget-title">Information</h4>
                                 <ul class="widget-nav">
-                                  
+                                    <li><a href="blog.php">Blog</a></li>
                                     <li><a href="about-us.php">About us</a></li>
                                     <li><a href="contact.php">Contact</a></li>
                                     <li><a href="faq.php">Privacy</a></li>
                                     <li><a href="my-account.php">Login</a></li>
-                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="product.php">Shop</a></li>
                                     <li><a href="my-account.php">My Account</a></li>
                                     <li><a href="faq.php">FAQs</a></li>
                                 </ul>
@@ -428,9 +405,6 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
         <!--== End Product Quick Wishlist Modal ==-->
 
         <!--== Start Product Quick Add Cart Modal ==-->
-               
-             
-
         <aside class="product-action-modal modal fade" id="action-CartAddModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -444,37 +418,15 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                             </div>
                             <div class="modal-action-product">
                                 <div class="thumb">
-                                    <img id="modal-image" src="" alt="Organic Food Juice" width="466" height="320">
+                                    <img src="assets/images/shop/modal1.webp" alt="Organic Food Juice" width="466" height="320">
                                 </div>
-                                <h4  class="product-name"><a id="modal-name" href="product-details.php">Readable content DX22</a></h4>
+                                <h4 class="product-name"><a href="product-details.php">Readable content DX22</a></h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </aside>
-        <!--== SCRIPTS Product Quick Add Cart Modal ==-->
-        <script>
-                var cartModal = document.getElementById('action-CartAddModal');
-                cartModal.addEventListener('show.bs.modal', function (event) {
-                // Button that triggered the modal
-                var button = event.relatedTarget
-                // Extract info from data-bs-* attributes
-                var productName = button.getAttribute('data-product-name')
-                var productImage = button.getAttribute('data-product-image')
-                // If necessary, you could initiate an AJAX request here
-                // and then do the updating in a callback.
-                //
-                // Update the modal's content.
-                var modalTitle = document.getElementById('modal-name')
-                var modalImage = document.getElementById('modal-image')
-              
-
-                modalTitle.textContent =  productName.replace(/\+/g, ' ')
-                modalImage.src = "./img/" + productImage.replace(/\+/g, ' ')
-                })
-
-                </script>
         <!--== End Product Quick Add Cart Modal ==-->
 
         <!--== Start Aside Search Form ==-->
@@ -516,16 +468,15 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                     <div class="col-lg-6">
                                         <!--== Start Product Thumbnail Area ==-->
                                         <div class="product-single-thumb">
-                                            <img src="./img/<?php echo $value->getImage() ?>" width="544" height="560" alt="Image-HasTech">
+                                            <img src="assets/images/shop/quick-view1.webp" width="544" height="560" alt="Image-HasTech">
                                         </div>
                                         <!--== End Product Thumbnail Area ==-->
                                     </div>
                                     <div class="col-lg-6">
                                         <!--== Start Product Info Area ==-->
                                         <div class="product-details-content">
-                                        <?php foreach($data as $value)  ?> 
-                                            
-                                            <h3 class="product-details-title"><?php echo $value->getName() ?></h3>
+                                            <h5 class="product-details-collection">Premioum collection</h5>
+                                            <h3 class="product-details-title">Offbline Instant Age Rewind Eraser.</h3>
                                             <div class="product-details-review mb-5">
                                                 <div class="product-review-icon">
                                                     <i class="fa fa-star-o"></i>
@@ -534,16 +485,16 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                                     <i class="fa fa-star-o"></i>
                                                     <i class="fa fa-star-half-o"></i>
                                                 </div>
-                                                <button type="button" class="product-review-show"><?php echo $value->getCategory() ?></button>
+                                                <button type="button" class="product-review-show">150 reviews</button>
                                             </div>
-                                            <p class="mb-6"><?php echo $value->getDescription() ?></p>
+                                            <p class="mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, repellendus. Nam voluptate illo ut quia non sapiente provident alias quos laborum incidunt, earum accusamus, natus. Vero pariatur ut veniam sequi amet consectetur.</p>
                                             <div class="product-details-pro-qty">
                                                 <div class="pro-qty">
                                                     <input type="text" title="Quantity" value="01">
                                                 </div>
                                             </div>
                                             <div class="product-details-action">
-                                                <h4 class="price"><?php echo $value->getPrice() ?> DH</h4>
+                                                <h4 class="price">$254.22</h4>
                                                 <div class="product-details-cart-wishlist">
                                                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">Add to cart</button>
                                                 </div>
@@ -568,28 +519,24 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
             </div>
             <div class="offcanvas-body">
                 <ul class="aside-cart-product-list">
-                <?php 
-
-            
-                    $cartLineList = $cart->getCartLineList()[0];
-
-                    $cartQuantity = $cartManager->getCartQuantity();
-                    $totalPrice = 0;
-                    if($cartLineList != null){
-                    foreach($cartLineList as $value){
-                ?>
-                    <?php $totalPrice = ($totalPrice + $value->getProduct()->getPrice()) * $value->getProductCartQuantity()?>
                     <li class="aside-product-list-item">
                         <a href="#/" class="remove">×</a>
                         <a href="product-details.php">
-                            <img src="./img/<?php echo $value->getProduct()->getImage()?>"  width="68" height="84" alt="Image">
-                            <span class="product-title"><?= $value->getProduct()->getName() ?></span>
+                            <img src="assets/images/shop/cart1.webp" width="68" height="84" alt="Image">
+                            <span class="product-title">Leather Mens Slipper</span>
                         </a>
-                        <span class="product-price"><?=$value->getProductCartQuantity()?> × <?= $value->getProduct()->getPrice() ?> DH</span>
+                        <span class="product-price">1 × £69.99</span>
                     </li>
-                    <?php } }?>
+                    <li class="aside-product-list-item">
+                        <a href="#/" class="remove">×</a>
+                        <a href="product-details.php">
+                            <img src="assets/images/shop/cart2.webp" width="68" height="84" alt="Image">
+                            <span class="product-title">Quickiin Mens shoes</span>
+                        </a>
+                        <span class="product-price">1 × £20.00</span>
+                    </li>
                 </ul>
-                <p class="cart-total"><span>Subtotal:</span><span class="amount"><?= $totalPrice?> DH</span></p>
+                <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
                 <a class="btn-total" href="product-cart.php">View cart</a>
                 <a class="btn-total" href="product-checkout.php">Checkout</a>
             </div>
@@ -606,14 +553,17 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                 <div id="offcanvasNav" class="offcanvas-menu-nav">
                     <ul>
                         <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">home</a>
-                             
+                            <ul>
+                                <li><a href="index.php">Home One</a></li>
+                                <li><a href="index-two.php">Home Two</a></li>
+                            </ul>
                         </li>
                         <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="about-us.php">about</a></li>
                         <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">shop</a>
                             <ul>
                                 <li><a href="#" class="offcanvas-nav-item">Shop Layout</a>
                                     <ul>
-                                        <li><a href="#">Shop 3 Column</a></li>
+                                        <li><a href="product.php">Shop 3 Column</a></li>
                                         <li><a href="product-four-columns.php">Shop 4 Column</a></li>
                                         <li><a href="product-left-sidebar.php">Shop Left Sidebar</a></li>
                                         <li><a href="product-right-sidebar.php">Shop Right Sidebar</a></li>
@@ -637,8 +587,25 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                 </li>
                             </ul>
                         </li>
-                        
-                       
+                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">Blog</a>
+                            <ul>
+                                <li><a class="offcanvas-nav-item" href="#">Blog Layout</a>
+                                    <ul>
+                                        <li><a href="blog.php">Blog Grid</a></li>
+                                        <li><a href="blog-left-sidebar.php">Blog Left Sidebar</a></li>
+                                        <li><a href="blog-right-sidebar.php">Blog Right Sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog-details.php">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">Pages</a>
+                            <ul>
+                                <li><a href="my-account.php">My Account</a></li>
+                                <li><a href="faq.php">Frequently Questions</a></li>
+                                <li><a href="page-not-found.php">Page Not Found</a></li>
+                            </ul>
+                        </li>
                         <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="contact.php">Contact</a></li>
                     </ul>
                 </div>
