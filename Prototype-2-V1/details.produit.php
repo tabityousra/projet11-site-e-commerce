@@ -6,7 +6,7 @@ include 'gestionProduit.php';
 
 if(isset($_GET["id"])){
 $id=$_GET["id"];
-
+ 
 }
 $gestion = new GestionProduit();
 $data = $gestion->afficherProduit($id);

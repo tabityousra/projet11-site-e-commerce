@@ -1,8 +1,5 @@
 <?php
 include "produit.php";
-
-
-
 class GestionProduit {
 
     public $name ;
@@ -11,31 +8,35 @@ class GestionProduit {
 
     private function getConnection(){
       
-            $this->Connection = mysqli_connect('localhost', 'yousra', 'test123', 'site-e-commerce');
-          
-        
-        
-        
+         $this->Connection = mysqli_connect('localhost', 'yousra', 'test123', 'site-e-commerce');
+              
         return $this->Connection;
     }
-
-
-  
-    
-    
-    
     // pour ajouter session
     public function set($key,$value){
         $_SESSION["paniers"]["produits"][$key] = $value ;
 
     }
-
+    //supprimer session
+    public function delete($id){
+        if(isset($_SESSION["paniers"]["produits"][$id])){
+            unset($_SESSION["paniers"]["produits"][$id]);
+        }
+    }
+    
       // afficher session
 
       public function getPanier(){
         if(isset($_SESSION["paniers"]["produits"])){
             return $_SESSION["paniers"]["produits"];
             return array();
+        }
+    }
+     // pour afficher  session 
+     public function getProduit($id){
+        if(isset($_SESSION["paniers"]["produits"][$id])){
+            return $_SESSION["paniers"]["produits"][$id];
+            return null ; 
         }
     }
 
@@ -57,9 +58,7 @@ class GestionProduit {
           return $TableData;
  
         }
-  
- 
-        
+       
 // afficher  les produits : page panier
 
         public function afficherProduit($id){
@@ -78,11 +77,8 @@ class GestionProduit {
             }
               return $TableData;
         }
-      
- 
-
     
-
-
-
     }
+    
+          
+    
