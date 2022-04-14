@@ -194,8 +194,8 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="hare-care.php" class="product-category-item">
                                 <img class="icon" src="assets/images/shop/category/1.webp" width="70" height="80" alt="Image-HasTech">
-                                <h3 class="title">Hare care</h3>
-                                <span class="flag-new">new</span>
+                                <h3 class="title">Soin des cheveux</h3>
+                                <span class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
