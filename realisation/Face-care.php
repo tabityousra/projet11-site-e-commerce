@@ -220,7 +220,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
                                 <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
                                 <h3 class="title">Soin du visage</h3>
-                                <span data-bg-color="#835BF4" class="flag-new">sale</span>
+                                <span data-bg-color="#835BF4" class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -290,7 +290,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                         <i class="fa fa-heart-o"></i>
                                     </button>
                                     <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
+                                        <span>Ajouter au panier</span>
                                     </button>
                                 </div>
                             </div>
