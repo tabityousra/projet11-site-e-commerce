@@ -81,9 +81,9 @@ $data = $gestion->afficherCatigore($Categorie);
                                 
                                 </li>
                                 <li><a href="about-us.php">à propos</a></li>
-                                <li class="has-submenu position-static"><a href="#">shop</a>
+                                <li class="has-submenu position-static"><a href="#">magasin</a>
                                     <ul class="submenu-nav-mega">
-                                        <li><a href="#/" class="mega-title">categories</a>
+                                        <li><a href="#/" class="mega-title">catégories</a>
                                             <ul>
                                                 
                                                 <li><a href="hare-care.php">Hare care</a></li>
