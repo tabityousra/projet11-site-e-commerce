@@ -195,7 +195,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="hare-care.php" class="product-category-item">
                                 <img class="icon" src="assets/images/shop/category/1.webp" width="70" height="80" alt="Image-HasTech">
-                                <h3 class="title">Hare care</h3>
+                                <h3 class="title">Soin du cheveux</h3>
                                 <span class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
@@ -204,7 +204,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="skin-care.php" class="product-category-item" data-bg-color="#FFEDB4">
                                 <img class="icon" src="assets/images/shop/category/2.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Skin care</h3>
+                                <h3 class="title">Soins de la peau</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
