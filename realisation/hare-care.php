@@ -203,7 +203,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="skin-care.php" class="product-category-item" data-bg-color="#FFEDB4">
                                 <img class="icon" src="assets/images/shop/category/2.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Skin care</h3>
+                                <h3 class="title">Soins de la peau</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -211,7 +211,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="lip-stick.php" class="product-category-item" data-bg-color="#DFE4FF">
                                 <img class="icon" src="assets/images/shop/category/3.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Lip stick</h3>
+                                <h3 class="title">Rouge à lèvres</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -290,7 +290,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                         <i class="fa fa-heart-o"></i>
                                     </button>
                                     <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
+                                        <span>Ajouter au panier</span>
                                     </button>
                                 </div>
                             </div>
