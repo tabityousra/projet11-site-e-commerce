@@ -402,7 +402,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                 <i class="fa fa-times"></i>
                             </button>
                             <div class="modal-action-messages">
-                                <i class="fa fa-check-square-o"></i> Added to cart successfully!
+                                <i class="fa fa-check-square-o"></i> Ajouté au panier avec succès!
                             </div>
                             <div class="modal-action-product">
                                 <div class="thumb">
