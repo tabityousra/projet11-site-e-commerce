@@ -76,10 +76,10 @@ $data = $gestion->afficherCatigore($Categorie);
                     <div class="col-lg-7 col-xl-7 d-none d-lg-block">
                         <div class="header-navigation ps-7">
                             <ul class="main-nav justify-content-start">
-                                <li class="has-submenu"><a href="index.php">home</a>
+                                <li class="has-submenu"><a href="index.php">Accueil</a>
                                         
                                 </li>
-                                <li><a href="about-us.php">about</a></li>
+                                <li><a href="about-us.php">A propos</a></li>
                                 <li class="has-submenu position-static"><a href="#">shop</a>
                                     <ul class="submenu-nav-mega">
                                         <li><a href="#/" class="mega-title">categories</a>
