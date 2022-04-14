@@ -166,10 +166,10 @@ $data = $gestion->afficherCatigore($Categorie);
                         <div class="col-md-5">
                             <div class="page-header-st3-content text-center text-md-start">
                                 <ol class="breadcrumb justify-content-center justify-content-md-start">
-                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Accueil</a></li>
                                     <li class="breadcrumb-item active text-dark" aria-current="page">Produits</li>
                                 </ol>
-                                <h2 class="page-header-title">Hare care</h2>
+                                <h2 class="page-header-title">Soin des cheveux</h2>
                             </div>
                         </div>
                         <div class="col-md-7">
