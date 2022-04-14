@@ -97,7 +97,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                     </ul>
                                 </li>
                                 
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="contact.php">Contacter</a></li>
                             </ul>
                         </div>
                     </div>
@@ -166,10 +166,10 @@ $data = $gestion->afficherCatigore($Categorie);
                         <div class="col-md-5">
                             <div class="page-header-st3-content text-center text-md-start">
                                 <ol class="breadcrumb justify-content-center justify-content-md-start">
-                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
-                                    <li class="breadcrumb-item active text-dark" aria-current="page">Products</li>
+                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Accueil</a></li>
+                                    <li class="breadcrumb-item active text-dark" aria-current="page">Produits</li>
                                 </ol>
-                                <h2 class="page-header-title">Skin care</h2>
+                                <h2 class="page-header-title">Soin de la peau </h2>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -194,8 +194,8 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="hare-care.php" class="product-category-item">
                                 <img class="icon" src="assets/images/shop/category/1.webp" width="70" height="80" alt="Image-HasTech">
-                                <h3 class="title">Hare care</h3>
-                                <span class="flag-new">new</span>
+                                <h3 class="title">Soin des cheveux</h3>
+                                <span class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -203,7 +203,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="skin-care.php" class="product-category-item" data-bg-color="#FFEDB4">
                                 <img class="icon" src="assets/images/shop/category/2.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Skin care</h3>
+                                <h3 class="title">Soin de la peau</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -211,7 +211,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="lip-stick.php" class="product-category-item" data-bg-color="#DFE4FF">
                                 <img class="icon" src="assets/images/shop/category/3.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Lip stick</h3>
+                                <h3 class="title">Rouge à lèvres</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -219,8 +219,8 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
                                 <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Face skin</h3>
-                                <span data-bg-color="#835BF4" class="flag-new">sale</span>
+                                <h3 class="title">Soin de visage</h3>
+                                <span data-bg-color="#835BF4" class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -228,7 +228,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="blusher.php" class="product-category-item" data-bg-color="#FFDAE0">
                                 <img class="icon" src="assets/images/shop/category/5.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Blusher</h3>
+                                <h3 class="title">Fard à joues</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -252,13 +252,13 @@ $data = $gestion->afficherCatigore($Categorie);
                                     <a class="d-block" href="product-details.php?id=<?= $value->getId_Produit() ?>">
                                         <img src="./img/<?php echo $value->getPhoto()?>" width="370" height="450" alt="Image-HasTech">
                                     </a>
-                                    <span class="flag-new">new</span>
+                                    <span class="flag-new">Nouveau</span>
                                     <div class="product-action">
                                         <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
                                             <i class="fa fa-expand"></i>
                                         </button>
                                         <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
+                                            <span>Ajouter au panier</span>
                                         </button>
                                         <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
                                             <i class="fa fa-heart-o"></i>
@@ -290,7 +290,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                         <i class="fa fa-heart-o"></i>
                                     </button>
                                     <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
+                                        <span>Ajouter au panier</span>
                                     </button>
                                 </div>
                             </div>
