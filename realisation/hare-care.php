@@ -252,13 +252,13 @@ $data = $gestion->afficherCatigore($Categorie);
                                     <a class="d-block" href="product-details.php?id=<?= $value->getId_Produit() ?>">
                                         <img src="./img/<?php echo $value->getPhoto()?>" width="370" height="450" alt="Image-HasTech">
                                     </a>
-                                    <span class="flag-new">new</span>
+                                    <span class="flag-new">Nouveau</span>
                                     <div class="product-action">
                                         <button type="button" class="product-action-btn action-btn-quick-view" data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
                                             <i class="fa fa-expand"></i>
                                         </button>
                                         <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
+                                            <span>Ajouter au panier</span>
                                         </button>
                                         <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
                                             <i class="fa fa-heart-o"></i>
