@@ -219,7 +219,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
                                 <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Face skin</h3>
+                                <h3 class="title">soins du visage</h3>
                                 <span data-bg-color="#835BF4" class="flag-new">sale</span>
                             </a>
                             <!--== End Product Category Item ==-->
@@ -228,7 +228,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="blusher.php" class="product-category-item" data-bg-color="#FFDAE0">
                                 <img class="icon" src="assets/images/shop/category/5.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Blusher</h3>
+                                <h3 class="title">Fard à joues</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
