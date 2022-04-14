@@ -212,7 +212,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="lip-stick.php" class="product-category-item" data-bg-color="#DFE4FF">
                                 <img class="icon" src="assets/images/shop/category/3.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Lip stick</h3>
+                                <h3 class="title">Rouge à lèvres</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -229,7 +229,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="blusher.php" class="product-category-item" data-bg-color="#FFDAE0">
                                 <img class="icon" src="assets/images/shop/category/5.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Blusher</h3>
+                                <h3 class="title">Fard à joues</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
