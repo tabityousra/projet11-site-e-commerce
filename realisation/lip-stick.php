@@ -86,11 +86,11 @@ $data = $gestion->afficherCatigore($Categorie);
                                         <li><a href="#/" class="mega-title">catégories</a>
                                             <ul>
                                                 
-                                                <li><a href="hare-care.php">Hare care</a></li>
-                                                <li><a href="Face-care.php">Face care</a></li>
-                                                <li><a href="blusher.php">Blusher</a></li>
-                                                <li><a href="lip-stick.php">Lip stick</a></li>
-                                                <li><a href="skin-care.php">Skin care</a></li>
+                                                <li><a href="hare-care.php">Soin du cheveux</a></li>
+                                                <li><a href="Face-care.php">soins de la peau</a></li>
+                                                <li><a href="blusher.php">Fard à joues</a></li>
+                                                <li><a href="lip-stick.php">Rouge à lèvres</a></li>
+                                                <li><a href="skin-care.php">soins du visage</a></li>
                                             </ul>
                                         </li>
                                        
@@ -98,7 +98,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                     </ul>
                                 </li>
                                 
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="contact.php">Contacter</a></li>
                             </ul>
                         </div>
                     </div>
