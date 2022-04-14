@@ -76,20 +76,20 @@ $data = $gestion->afficherCatigore($Categorie);
                     <div class="col-lg-7 col-xl-7 d-none d-lg-block">
                         <div class="header-navigation ps-7">
                             <ul class="main-nav justify-content-start">
-                                <li class="has-submenu"><a href="index.php">home</a>
+                                <li class="has-submenu"><a href="index.php">Accueil</a>
                                         
                                 </li>
-                                <li><a href="about-us.php">about</a></li>
-                                <li class="has-submenu position-static"><a href="#">shop</a>
+                                <li><a href="about-us.php">A propos</a></li>
+                                <li class="has-submenu position-static"><a href="#">Magasin</a>
                                     <ul class="submenu-nav-mega">
-                                        <li><a href="#/" class="mega-title">categories</a>
+                                        <li><a href="#/" class="mega-title">catégories</a>
                                             <ul>
                                                 
-                                                <li><a href="hare-care.php">Hare care</a></li>
-                                                <li><a href="Face-care.php">Face care</a></li>
-                                                <li><a href="blusher.php">Blusher</a></li>
-                                                <li><a href="lip-stick.php">Lip stick</a></li>
-                                                <li><a href="skin-care.php">Skin care</a></li>
+                                                <li><a href="hare-care.php">Soin des cheveau</a></li>
+                                                <li><a href="Face-care.php">Soin du visage</a></li>
+                                                <li><a href="blusher.php">Fard à joues</a></li>
+                                                <li><a href="lip-stick.php">Rouge à lèvres</a></li>
+                                                <li><a href="skin-care.php">Soin de la peau</a></li>
                                             </ul>
                                         </li>
                                        
@@ -97,7 +97,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                     </ul>
                                 </li>
                                 
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="contact.php">Contacter</a></li>
                             </ul>
                         </div>
                     </div>
@@ -166,10 +166,10 @@ $data = $gestion->afficherCatigore($Categorie);
                         <div class="col-md-5">
                             <div class="page-header-st3-content text-center text-md-start">
                                 <ol class="breadcrumb justify-content-center justify-content-md-start">
-                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
-                                    <li class="breadcrumb-item active text-dark" aria-current="page">Products</li>
+                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Accueil</a></li>
+                                    <li class="breadcrumb-item active text-dark" aria-current="page">Produits</li>
                                 </ol>
-                                <h2 class="page-header-title">Face care</h2>
+                                <h2 class="page-header-title">Soin du visage</h2>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -194,8 +194,8 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="hare-care.php" class="product-category-item">
                                 <img class="icon" src="assets/images/shop/category/1.webp" width="70" height="80" alt="Image-HasTech">
-                                <h3 class="title">Hare care</h3>
-                                <span class="flag-new">new</span>
+                                <h3 class="title">Soin des cheveaux</h3>
+                                <span class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -203,7 +203,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="skin-care.php" class="product-category-item" data-bg-color="#FFEDB4">
                                 <img class="icon" src="assets/images/shop/category/2.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Skin care</h3>
+                                <h3 class="title">Soin de la peau</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -211,7 +211,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="lip-stick.php" class="product-category-item" data-bg-color="#DFE4FF">
                                 <img class="icon" src="assets/images/shop/category/3.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Lip stick</h3>
+                                <h3 class="title">Rouge à lèvres</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -219,7 +219,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
                                 <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Face skin</h3>
+                                <h3 class="title">Soin du visage</h3>
                                 <span data-bg-color="#835BF4" class="flag-new">sale</span>
                             </a>
                             <!--== End Product Category Item ==-->
@@ -228,7 +228,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="blusher.php" class="product-category-item" data-bg-color="#FFDAE0">
                                 <img class="icon" src="assets/images/shop/category/5.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Blusher</h3>
+                                <h3 class="title">Fard à joues</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -258,7 +258,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                             <i class="fa fa-expand"></i>
                                         </button>
                                         <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
+                                            <span>Ajouter au panier</span>
                                         </button>
                                         <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
                                             <i class="fa fa-heart-o"></i>
@@ -274,7 +274,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                             <i class="fa fa-star-o"></i>
                                             <i class="fa fa-star-half-o"></i>
                                         </div>
-                                        <div class="reviews">150 reviews</div>
+                                        <div class="reviews">150 avis</div>
                                     </div>
                                     <h4 class="title"><a href="product-details.php"><?php echo $value->getNom_Produit() ?></a></h4>
                                     <div class="prices">

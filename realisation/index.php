@@ -81,7 +81,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                         <li><a href="#/" class="mega-title">catégories</a>
                                             <ul>
                                                 
-                                                <li><a href="hare-care.php">Soin du cheveux</a></li>
+                                                <li><a href="hare-care.php">Soin des cheveux</a></li>
                                                 <li><a href="Face-care.php">soins de la peau</a></li>
                                                 <li><a href="blusher.php">Fard à joues</a></li>
                                                 <li><a href="lip-stick.php">Rouge à lèvres</a></li>
