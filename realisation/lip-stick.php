@@ -80,7 +80,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                         
                                 
                                 </li>
-                                <li><a href="about-us.php">about</a></li>
+                                <li><a href="about-us.php">à propos</a></li>
                                 <li class="has-submenu position-static"><a href="#">shop</a>
                                     <ul class="submenu-nav-mega">
                                         <li><a href="#/" class="mega-title">categories</a>
@@ -167,10 +167,10 @@ $data = $gestion->afficherCatigore($Categorie);
                         <div class="col-md-5">
                             <div class="page-header-st3-content text-center text-md-start">
                                 <ol class="breadcrumb justify-content-center justify-content-md-start">
-                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
-                                    <li class="breadcrumb-item active text-dark" aria-current="page">Products</li>
+                                    <li class="breadcrumb-item"><a class="text-dark" href="index.php">Accueil</a></li>
+                                    <li class="breadcrumb-item active text-dark" aria-current="page">Produits</li>
                                 </ol>
-                                <h2 class="page-header-title">Lip stick</h2>
+                                <h2 class="page-header-title">Rouge à lèvres</h2>
                             </div>
                         </div>
                         <div class="col-md-7">
