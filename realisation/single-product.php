@@ -1,23 +1,23 @@
 <?php
-
 include 'cartManager.php';
-
 session_start();
 
 $cartManager = new CartManager();
 
 $cartManager->initCode();
-
 $quantity = $cartManager->getCartQuantity();
-$cart = new Cart();
-$cart = $cartManager->getCart($_COOKIE['cartCookie']);
 
-
-if(isset($_GET["id"])){
-    $id=$_GET["id"];
-    $data = $cartManager->afficherProduit($id);
-    
+if(isset($_COOKIE['cartCookie'])){
+    $cart = $cartManager->getCart($_COOKIE['cartCookie']);
     }
+
+$id = $_GET["id"];
+$cartLine = $cartManager->getProductCart($_GET["id"]);
+if(isset($_POST["quantity"])){
+
+    $cartManager->editCartLine($_POST["id"], $_POST["quantity"]);
+    header("location: product-cart.php");
+}
 
 ?>
 
@@ -183,45 +183,52 @@ if(isset($_GET["id"])){
                 </div>
             </section>
             <!--== End Page Header Area Wrapper ==-->
+            <?php
+            if(isset($_GET["id"])){
+            $id=$_GET["id"];
 
+            }
+
+            $data = $cartManager->afficherProduit($id);
+            ?>
             <!--== Start Product Details Area Wrapper ==-->
             <section class="section-space">
                 <div class="container">
                     <div class="row product-details">
                         <div class="col-lg-6">
                             <div class="product-details-thumb">
-                                <img src="./img/<?php echo $data->getImage() ?>" width="570" height="693" alt="Image">
+                            <img src="./img/<?php echo $cartLine->getProduct()->getImage() ?>" width="570" height="693" alt="Image">
                                 <span class="flag-new">new</span>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="product-details-content">
-                                <!-- <h5 class="product-details-collection">Premioum collection</h5> -->
-                                <h3 class="product-details-title"><?php echo $data->getName() ?></h3>
+                                <!-- <h5 class="product-details-collection"><?php echo $cartLine->getProduct()->getCategory()?></h5> -->
+                                <h3 class="product-details-title"><?php echo $cartLine->getProduct()->getName() ?></h3>
                                 <div class="product-details-qty-list">
                                     
 
                                     <div class="qty-list-check">
                                         
                                         <label class="form-check-label" for="qtyList2"> <b>Description :<br></b> <span class="extra-offer"></label>
-                                        <label class="form-check-label" for="qtyList1"><?php echo $data->getDescription() ?></label>
+                                        <label class="form-check-label" for="qtyList1"><?php echo $cartLine->getProduct()->getDescription() ?></label>
 
                                     
                                     </div>
 
                                 </div>
-                                <form action="addToCart.php" method="POST">
-                                <input type="hidden" name="id" value="<?=  $data->getId(); ?>">
+                                <form action="editCart.php" method="POST">
+                                <input type="hidden" name="id" value="<?=$cartLine->getIdCartLine();?>">
                                 <div class="product-details-pro-qty">
                                     <div class="pro-qty">
-                                        <input type="text" title="Quantity" name="quantite"  value="01">
+                                        <input type="text" title="Quantity" name="quantity"  value="<?=$cartLine->getProductCartQuantity();?>">
                                     </div>
                                 </div>
                                
                                 <div class="product-details-action">
-                                    <h4 class="price"><?php echo $data->getPrice() ?> DH</h4>
+                                    <h4 class="price"><?=$cartLine->getProduct()->getPrice();?> DH</h4>
                                     <div class="product-details-cart-wishlist">
-                                        <button type="submit" class="btn">Add to cart</button>
+                                        <button type="submit" class="btn">Update cart</button>
                                     </div>
                                 </div>
                                 </form>
@@ -470,6 +477,7 @@ if(isset($_GET["id"])){
                         <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">home</a>
                             <ul>
                                 <li><a href="index.php">Home One</a></li>
+                                <li><a href="index-two.html">Home Two</a></li>
                             </ul>
                         </li>
                         <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="about-us.html">about</a></li>

@@ -75,17 +75,17 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                 <li class="has-submenu"><a href="index.php">home</a>
                                         
                                 </li>
-                                <li><a href="about-us.php">about</a></li>
-                                <li class="has-submenu position-static"><a href="#">shop</a>
+                                <li><a href="about-us.php">à propos</a></li>
+                                <li class="has-submenu position-static"><a href="#">magasin</a>
                                     <ul class="submenu-nav-mega">
-                                        <li><a href="#/" class="mega-title">categories</a>
+                                        <li><a href="#/" class="mega-title">catégories</a>
                                             <ul>
                                                 
-                                                <li><a href="hare-care.php">Hare care</a></li>
-                                                <li><a href="Face-care.php">Face care</a></li>
-                                                <li><a href="blusher.php">Blusher</a></li>
-                                                <li><a href="lip-stick.php">Lip stick</a></li>
-                                                <li><a href="skin-care.php">Skin care</a></li>
+                                                <li><a href="hare-care.php">Soin du cheveux</a></li>
+                                                <li><a href="Face-care.php">soins de la peau</a></li>
+                                                <li><a href="blusher.php">Fard à joues</a></li>
+                                                <li><a href="lip-stick.php">Rouge à lèvres</a></li>
+                                                <li><a href="skin-care.php">soins du visage</a></li>
                                             </ul>
                                         </li>
                                        
@@ -167,7 +167,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                             <div class="hero-slide-text-img"><img src="assets/images/slider/text-theme.webp" width="427" height="232" alt="Image"></div>
                                             <h2 class="hero-slide-title">CLEAN FRESH</h2>
                                             <p class="hero-slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
-                                            <a class="btn btn-border-dark" href="index.php">BUY NOW</a>
+                                            <a class="btn btn-border-dark" href="index.php">Acheter maintenant</a>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
@@ -188,7 +188,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                             <div class="hero-slide-text-img"><img src="assets/images/slider/text-theme.webp" width="427" height="232" alt="Image"></div>
                                             <h2 class="hero-slide-title">Facial Cream</h2>
                                             <p class="hero-slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
-                                            <a class="btn btn-border-dark" href="index.php">BUY NOW</a>
+                                            <a class="btn btn-border-dark" href="index.php">Acheter maintenant</a>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
@@ -221,8 +221,8 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                             <!--== Start Product Category Item ==-->
                             <a href="hare-care.php" class="product-category-item">
                                 <img class="icon" src="assets/images/shop/category/1.webp" width="70" height="80" alt="Image-HasTech">
-                                <h3 class="title">Hare care</h3>
-                                <span class="flag-new">new</span>
+                                <h3 class="title">Soin du cheveux</h3>
+                                <span class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -230,7 +230,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                             <!--== Start Product Category Item ==-->
                             <a href="skin-care.php" class="product-category-item" data-bg-color="#FFEDB4">
                                 <img class="icon" src="assets/images/shop/category/2.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Skin care</h3>
+                                <h3 class="title">soins de la peau</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -238,7 +238,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                             <!--== Start Product Category Item ==-->
                             <a href="lip-stick.php" class="product-category-item" data-bg-color="#DFE4FF">
                                 <img class="icon" src="assets/images/shop/category/3.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Lip stick</h3>
+                                <h3 class="title">Rouge à lèvres</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -246,8 +246,8 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                             <!--== Start Product Category Item ==-->
                             <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
                                 <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Face skin</h3>
-                                <span data-bg-color="#835BF4" class="flag-new">sale</span>
+                                <h3 class="title">soins du visage</h3>
+                                <span data-bg-color="#835BF4" class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -255,7 +255,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                             <!--== Start Product Category Item ==-->
                             <a href="blusher.php" class="product-category-item" data-bg-color="#FFDAE0">
                                 <img class="icon" src="assets/images/shop/category/5.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Blusher</h3>
+                                <h3 class="title">Fard à joues</h3>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -271,7 +271,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                     <div class="row">
                         <div class="col-12">
                             <div class="section-title text-center">
-                                <h2 class="title">Top sale</h2>
+                                <h2 class="title">Meilleure vente</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                             </div>
                         </div>
@@ -286,7 +286,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                     <a class="d-block" href="product-details.php?id=<?php echo $value->getId()?>">
                                         <img src="./img/<?php echo $value->getImage()?>" width="370" height="450" alt="Image-HasTech">
                                     </a>
-                                    <span class="flag-new">new</span>
+                                    <span class="flag-new">Nouveau</span>
                                     <div class="product-action">
                                         <button type="button" class="product-action-btn action-btn-quick-view" value="<?php echo $value->getId() ?>"  data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
                                             <i class="fa fa-expand" ></i>
@@ -301,7 +301,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                                 data-product-name = <?php echo urlencode($value->getName())?>
                                                
                                                 >
-                                            <span>Add to cart</span>
+                                            <span>Ajouter au panier </span>
                                         </button>
                                         <button type="button" class="product-action-btn action-btn-wishlist" data-bs-toggle="modal" data-bs-target="#action-WishlistModal">
                                             <i class="fa fa-heart-o"></i>
@@ -323,7 +323,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                                         <i class="fa fa-heart-o"></i>
                                     </button>
                                     <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
+                                        <span>Ajouter au panier</span>
                                     </button>
                                 </div>
                             </div>
