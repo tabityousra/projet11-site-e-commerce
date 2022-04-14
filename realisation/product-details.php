@@ -451,7 +451,7 @@ if(isset($_GET["id"])){
                     </li>
                     <?php } }?>
                 </ul>
-                <p class="cart-total"><span>Subtotal:</span><span class="amount"><?= $totalPrice?> DH</span></p>
+                <p class="cart-total"><span>Total:</span><span class="amount"><?= $totalPrice?> DH</span></p>
                 <a class="btn-total" href="product-cart.php">View cart</a>
                 <a class="btn-total" href="product-checkout.php">Checkout</a>
             </div>
