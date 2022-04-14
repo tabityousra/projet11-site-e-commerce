@@ -85,11 +85,11 @@ $data = $gestion->afficherCatigore($Categorie);
                                         <li><a href="#/" class="mega-title">categories</a>
                                             <ul>
                                                 
-                                                <li><a href="hare-care.php">Hare care</a></li>
-                                                <li><a href="Face-care.php">Face care</a></li>
-                                                <li><a href="blusher.php">Blusher</a></li>
-                                                <li><a href="lip-stick.php">Lip stick</a></li>
-                                                <li><a href="skin-care.php">Skin care</a></li>
+                                                <li><a href="hare-care.php">soin des cheveaux</a></li>
+                                                <li><a href="Face-care.php">soin de la peau</a></li>
+                                                <li><a href="blusher.php">Fard à joues</a></li>
+                                                <li><a href="lip-stick.php">Rouge à lèvres</a></li>
+                                                <li><a href="skin-care.php">soin du visage</a></li>
                                             </ul>
                                         </li>
                                        
@@ -97,7 +97,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                     </ul>
                                 </li>
                                 
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="contact.php">Contacter</a></li>
                             </ul>
                         </div>
                     </div>
@@ -167,7 +167,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <div class="page-header-st3-content text-center text-md-start">
                                 <ol class="breadcrumb justify-content-center justify-content-md-start">
                                     <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
-                                    <li class="breadcrumb-item active text-dark" aria-current="page">Products</li>
+                                    <li class="breadcrumb-item active text-dark" aria-current="page">Produits</li>
                                 </ol>
                                 <h2 class="page-header-title">Hare care</h2>
                             </div>
