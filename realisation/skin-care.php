@@ -76,20 +76,20 @@ $data = $gestion->afficherCatigore($Categorie);
                     <div class="col-lg-7 col-xl-7 d-none d-lg-block">
                         <div class="header-navigation ps-7">
                             <ul class="main-nav justify-content-start">
-                                <li class="has-submenu"><a href="index.php">home</a>
+                                <li class="has-submenu"><a href="index.php">Accueil</a>
                                         
                                 </li>
-                                <li><a href="about-us.php">about</a></li>
-                                <li class="has-submenu position-static"><a href="#">shop</a>
+                                <li><a href="about-us.php">A propos</a></li>
+                                <li class="has-submenu position-static"><a href="#">Magasin</a>
                                     <ul class="submenu-nav-mega">
-                                        <li><a href="#/" class="mega-title">categories</a>
+                                        <li><a href="#/" class="mega-title">catégories</a>
                                             <ul>
                                                 
-                                                <li><a href="hare-care.php">Hare care</a></li>
-                                                <li><a href="Face-care.php">Face care</a></li>
-                                                <li><a href="blusher.php">Blusher</a></li>
-                                                <li><a href="lip-stick.php">Lip stick</a></li>
-                                                <li><a href="skin-care.php">Skin care</a></li>
+                                                <li><a href="hare-care.php">Soin des cheveaux</a></li>
+                                                <li><a href="Face-care.php">Soin du visage</a></li>
+                                                <li><a href="blusher.php">Fard à joues</a></li>
+                                                <li><a href="lip-stick.php">Rouge à lèvres</a></li>
+                                                <li><a href="skin-care.php">Soin de la peau</a></li>
                                             </ul>
                                         </li>
                                        
