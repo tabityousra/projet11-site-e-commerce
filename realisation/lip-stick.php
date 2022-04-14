@@ -291,7 +291,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                         <i class="fa fa-heart-o"></i>
                                     </button>
                                     <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">
-                                        <span>Add to cart</span>
+                                        <span>Ajouter au panier</span>
                                     </button>
                                 </div>
                             </div>
