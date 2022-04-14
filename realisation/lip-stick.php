@@ -220,7 +220,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <!--== Start Product Category Item ==-->
                             <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
                                 <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Face skin</h3>
+                                <h3 class="title">Soins de la peau</h3>
                                 <span data-bg-color="#835BF4" class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
