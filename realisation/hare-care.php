@@ -80,7 +80,7 @@ $data = $gestion->afficherCatigore($Categorie);
                                         
                                 </li>
                                 <li><a href="about-us.php">A propos</a></li>
-                                <li class="has-submenu position-static"><a href="#">shop</a>
+                                <li class="has-submenu position-static"><a href="#">Magasin</a>
                                     <ul class="submenu-nav-mega">
                                         <li><a href="#/" class="mega-title">categories</a>
                                             <ul>
@@ -173,7 +173,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             </div>
                         </div>
                         <div class="col-md-7">
-                            <h5 class="showing-pagination-results mt-5 mt-md-9 text-center text-md-end">Showing 09 Results</h5>
+                            <h5 class="showing-pagination-results mt-5 mt-md-9 text-center text-md-end">Affichage de 09 résultats</h5>
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,7 @@ $data = $gestion->afficherCatigore($Categorie);
                             <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
                                 <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
                                 <h3 class="title">soins du visage</h3>
-                                <span data-bg-color="#835BF4" class="flag-new">sale</span>
+                                <span data-bg-color="#835BF4" class="flag-new">Nouveau</span>
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
