@@ -13,7 +13,7 @@ class CartManager {
     private function getConnection(){
       
             // $this->Connection = mysqli_connect('localhost', 'test', 'test123', 'e-commerce');
-            $this->Connection = mysqli_connect('localhost', 'testee', 'test1234', 'e-commerce');
+            $this->Connection = mysqli_connect('localhost', 'yousra', 'test123', 'e-commerce');
            
          
        
@@ -30,6 +30,7 @@ class CartManager {
         setcookie('cartCookie', $cookieId, $expire);
         $_SESSION["product"] = array();
         $_SESSION["quantity"] = 0;
+        $_SESSION["product"] = array();
         $this->addCartCookie($cookieId);
     }
   }
