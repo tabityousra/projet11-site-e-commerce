@@ -106,7 +106,7 @@ class ProductManager{
                   
                    
                    $produit = new Produit_Categorie();
-                   $produit->setId_Produit($value_Data['id_produit']);   
+                    $produit->setId_Produit($value_Data['id_produit']);   
                    $produit->setPrix($value_Data['prix']);   
                    $produit->setNom_Produit($value_Data['nom_produit']);   
                    $produit->setDescription($value_Data['description']);   
