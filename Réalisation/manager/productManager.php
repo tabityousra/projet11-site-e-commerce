@@ -12,7 +12,7 @@ class ProductManager{
             $this->Connection = mysqli_connect('localhost', 'yousra', 'test123', 'e-commerce');
            
          
-       
+        
         
         return $this->Connection;
         
