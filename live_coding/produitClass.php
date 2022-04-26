@@ -1,20 +1,31 @@
 <?php
-class produit {
 
-    private $nom ;
-    private $prix;
-    private $id ;
+class Produit{
 
+    private $Nom ; 
+    private $Prix ; 
+    private $id ; 
 
-    public function getNom(){
-        return $this->nom ;
+    
+    public function getNom() {
+        return $this->Nom;
     }
-    public function setNom($nom){
-        $this->nom = $nom ;
+    public function setNom($Nom) {
+        $this->Nom = $Nom;
+    }
+    
+    public function getId() {
+        return $this->id;
+    }
+    public function setId($id) {
+        $this->id = $id;
     }
 
-    public function getPrix(){
-        return $this->prix ;
+    public function getPrix() {
+        return $this->Prix;
+    }
+    public function setPrix($Prix) {
+        $this->Prix = $Prix;
     }
 
 
