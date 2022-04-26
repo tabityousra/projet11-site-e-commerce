@@ -34,7 +34,10 @@
 
     }
 
-
+    public function afficherProduit($id){
+        $selectRow ="SELECT * FROM produit WHERE id =$id" ;
+        
+    }
 
     
 
