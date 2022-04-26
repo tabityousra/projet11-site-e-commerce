@@ -16,5 +16,6 @@
             <h1>Les produits</h1>
         </nav>
     </header>
+    <main>
 </body>
 </html>
