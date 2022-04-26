@@ -4,7 +4,6 @@ session_start();
 $compteur = count($_SESSION["paniers"]["produits"]) ;
 ?>
 
-<!-- CSS only -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,12 +11,8 @@ $compteur = count($_SESSION["paniers"]["produits"]) ;
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>prototype 2</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
@@ -45,20 +40,14 @@ $data= $gestionProduit->afficher();
           ?>
                 <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="OIP.jfif" alt="..." />
-                            <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
                                     <h5 class="fw-bolder"><?= $value->getNom();?></h5>
-                                    <!-- Product price-->
                                     <?= $value->getPrix();?> DH
                                 </div>
                                 <div class="text-center"><a href="detail de produit.php?id=<?= $value->getId();?>"class="btn btn-outline-dark mt-auto" href="#">Détail</a></div>
-                            </div>
-                            <!-- Product actions-->
-                               
+                            </div>                               
                             </div>
                         </div>
                         <?php } ?>
