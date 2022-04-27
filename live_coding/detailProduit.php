@@ -28,7 +28,7 @@ foreach($data as $value){
 ?>
         <section class="py-5">
             <div >
-                <div class='  text-black d-flex flex-row justify-content-evenly'>
+                <div class='  text-black d-flex flex-row justify-content-evenly container px-4 px-lg-5 my-5'>
                     <div >
                     <img  src="shopping.png" alt="..." /></div>
                     <div  class="col-md-6">
