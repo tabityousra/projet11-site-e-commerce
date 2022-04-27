@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-$compteur = count($_SESSION["paniers"]["produits"]) ;
 ?>
 
 <!-- CSS only -->

@@ -1,7 +1,8 @@
 <?php
 session_start();
-
-$compteur = count($_SESSION["paniers"]["produits"]) ;
+include 'produitManager.php';
+$gestionProduit = new produitManager();
+$data= $gestionProduit->afficher();
 ?>
 
 <!-- CSS only -->
@@ -13,23 +14,18 @@ $compteur = count($_SESSION["paniers"]["produits"]) ;
         <meta name="description" content="" />
         <meta name="author" content="" />
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">LES PRODUIT</h1>
-                </div>
+        <header>
+            <div class='container-fluid bg-dark text-white d-flex flex-row justify-content-evenly'>
+               
+                    <h1>LES PRODUIT</h1>
+                
             </div>
         </header>
-        <?php 
-include 'gestionProduit.php';
-$gestionProduit = new GestionProduit();
-$data= $gestionProduit->afficher();
-
-?>
+      
 
         <section class="py-5">
        
@@ -41,7 +37,7 @@ $data= $gestionProduit->afficher();
           ?>
                 <div class="col mb-5">
                         <div class="card h-100">
-                            <img class="card-img-top" src="OIP.jfif" alt="..." />
+                            <img class="card-img-top" src="shopping.png" alt="..." />
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <h5 class="fw-bolder"><?= $value->getNom();?></h5>

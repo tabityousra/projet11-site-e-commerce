@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-$compteur = count($_SESSION["paniers"]["produits"]) ;
 ?>
 <!-- CSS only -->
 <!DOCTYPE html>
@@ -22,10 +21,10 @@ include 'gestionProduit.php';
 
 if(isset($_GET["id"])){
 $id=$_GET["id"];
-
-}
 $gestion = new GestionProduit();
 $data = $gestion->afficherProduit($id);
+}
+
 foreach($data as $value){
 ?>
         <section class="py-5">

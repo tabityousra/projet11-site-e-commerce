@@ -1,6 +1,6 @@
 <?php
 
-
+include "produit.php" ;
  class produitManager {
 
     private $connection = NULL ;
@@ -16,15 +16,15 @@
 
     public function afficher(){
 
-        $selectRow = 'SELECT * FROM produit';
+        $selectRow = 'SELECT * FROM produits';
         $query = mysqli_query($this->getConnection() , $selectRow) ;
         $produit_data = mysqli_fetch_all($query , MYSQLI_ASSOC);
         $TableData = array();
         foreach ($produit_data as $value_data){
-            $produit = new produit();
-            $produit->setId($value_data['id_produit']);
-            $produit->setNom($value_data['nom_produit']);
-            $produit->setPrix($value_data['prix']) ;
+            $produit = new Produit();
+            $produit->setId($value_data['id']);
+            $produit->setNom($value_data['Nom']);
+            $produit->setPrix($value_data['Prix']) ;
 
             array_push($TableData , $produit);
 
@@ -35,7 +35,22 @@
     }
 
     public function afficherProduit($id){
-        $selectRow ="SELECT * FROM produit WHERE id =$id" ;
+        $selectRow ="SELECT * FROM produits WHERE id =$id" ;
+        $query = mysqli_query($this->getConnection() , $selectRow) ;
+        $produit_data = mysqli_fetch_all($query , MYSQLI_ASSOC);
+        $TableData = array();
+        foreach ($produit_data as $value_data){
+            $produit = new produit();
+            $produit->setId($value_data['id']);
+            $produit->setNom($value_data['Nom']);
+            $produit->setPrix($value_data['Prix']) ;
+
+            array_push($TableData , $produit);
+
+        }
+
+        return $TableData ;
+
         
     }
 
