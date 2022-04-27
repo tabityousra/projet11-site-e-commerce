@@ -41,7 +41,7 @@ foreach($data as $value){
                          ?>
                         </div>
                         <div class="d-flex">
-                        <form  class="" action="ajouter.php" method="POST">
+                        <form  class="" action="panier.php" method="POST">
                           <p>
                           <label for="btn btn-outline-dark flex-shrink-0"> Quantite</label>
                           <input type="number" name="quantite" value="1" >
