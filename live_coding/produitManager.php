@@ -54,6 +54,22 @@ include "produit.php" ;
         
     }
 
-    
+    public function set($key , $value){
+        $_session["paniers"]["produits"][$key]= $value ;
+    }
+
+    public function getPanier(){
+        if(isset($_session["paniers"]["produits"])){
+            return $_session["paniers"]["produits"];
+            return array();
+        }
+    }
+
+    public function getProduit($id){
+        if(isset($_session["paniers"]["produits"])){
+            return $_session["paniers"]["produits"];
+            return NULL;
+        }
+    }
 
  }
