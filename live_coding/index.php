@@ -43,7 +43,7 @@ $data= $gestionProduit->afficher();
                                     <h5 class="fw-bolder"><?= $value->getNom();?></h5>
                                     <?= $value->getPrix();?> DH
                                 </div>
-                                <div class="text-center"><a href="detail de produit.php?id=<?= $value->getId();?>"class="btn btn-outline-dark mt-auto" href="#">Détail</a></div>
+                                <div class="text-center"><a href="detailProduit.php?id=<?= $value->getId();?>"class="btn btn-outline-dark mt-auto" href="#">Détail</a></div>
                             </div>                               
                             </div>
                         </div>
